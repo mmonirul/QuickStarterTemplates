@@ -1,0 +1,6 @@
+﻿<h2> Manage your accoutn</h2>
+
+
+<p> Name : @User.Identity.Name</p>
+
+<p> Role: @User.FindFirst(claim => claim.Type == System.Security.Claims.ClaimTypes.Role)?.Value</p>
